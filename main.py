@@ -1,5 +1,5 @@
 def main():
-    book_path = "books/frankenstein.txt" # will allow custom inputs later
+    book_path = "books/frankenstein.txt" # maybe I'll allow custom inputs later
     book_text = read_text(book_path)
     word_count = count_words(book_text)
     print("========== Allie's Book Reporrrrrrrrt! ==========")
@@ -36,6 +36,7 @@ def count_each_letter(text):
     return letter_count
 
 # initialize the keys in alphabetical order because we're tidy
+#   well now that we're sorting them by frequency this bit's just pointless >_<
 def init_alphabetized_letters(dict):
     lower_alpha = "abcdefghijklmnopqrstuvwxyz"
     for letter in lower_alpha:
